@@ -12,6 +12,6 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getData() {
-    return this.http.get(`${this.apiUrl}/api/some-endpoint`); // Utilise l'URL du backend
+    return this.http.get(`${this.apiUrl}/api/products`); // Utilise l'URL du backend
   }
 }
