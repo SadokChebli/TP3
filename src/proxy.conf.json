@@ -1,6 +1,6 @@
 {
     "/api": {
-      "target": "tp3-backend.vercel.app",
+      "target": "https://tp3-backend.vercel.app/?vercelToolbarCode=vwdRUJRV8ysQj00",
       "secure": false
     }
   }
