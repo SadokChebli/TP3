@@ -7,9 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProductService {
+  private apiUrl = 'https://tp3-backend.vercel.app/api/products';
   constructor(private http: HttpClient) {}
 
   getProducts(): Observable<IProduct[]> {
-    return this.http.get<IProduct[]>('/api/products');
+    return this.http.get<IProduct[]>(this.apiUrl);
   }
 }
