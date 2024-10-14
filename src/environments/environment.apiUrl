@@ -1,0 +1,21 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { environment } from '../environments/environment'; // Importe les variables d'environnement
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ApiService {
+
+  private apiUrl = environment.apiUrl; // Utilise l'URL dynamique
+
+  constructor(private http: HttpClient) { }
+
+  getProducts() {
+    return this.http.get(`${this.apiUrl}/api/products`); // Utilise l'URL du backend
+  }
+
+  getCart() {
+    return this.http.get(`${this.apiUrl}/api/cart`);
+  }
+}
