@@ -12,7 +12,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    return this.http.get(`${this.apiUrl}/api/products`); // Utilise l'URL du backend
+    return this.http.get(`${environment.apiUrl}/products`); // Utilise l'URL du backend
   }
 
   getCart() {
