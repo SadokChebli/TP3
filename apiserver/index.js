@@ -30,6 +30,9 @@ let cart = [];
 // app.use(function (req, res, next) {
 //   setTimeout(next, 1000);
 // });
+app.get("/", (req, res) => {
+  res.send("API is running!");
+});
 
 app.get("/api/products", (req, res) => {
   let products = [
