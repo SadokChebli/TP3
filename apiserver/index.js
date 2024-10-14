@@ -8,6 +8,8 @@ app.use(bodyParser.json());
     ***NEVER*** store credentials unencrypted like this.
     This is for demo purposes only in order to simulate a functioning API server.
 */
+const cors = require("cors");
+app.use(cors());
 const users = {
   "user1@joesrobotshopenit.com": {
     firstName: "User1",
