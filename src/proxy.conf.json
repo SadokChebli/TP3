@@ -1,6 +1,6 @@
 {
     "/api": {
-      "target": "https://tp3-backend.vercel.app/?vercelToolbarCode=vwdRUJRV8ysQj00",
+      "target": "http://localhost:8081",
       "secure": false
     }
   }
